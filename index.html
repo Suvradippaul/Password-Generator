@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Password Generator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="toggleSwitchStyle.css">
+	<link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
+	<link href="http://fonts.cdnfonts.com/css/mollen-personal-use" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/b149825b92.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div >
+		<header class="header">
+			<h1>
+				<span>
+					<span class="text-gradient">
+						<i class="fa-solid fa-key" id="key-icon"></i>
+						PASSWORD
+					</span>
+				</span>GENERATOR
+			</h1>
+			<h4 class="tag-line">A <span class="text-gradient">strong password</span> can save your life</h4>
+		</header>
+	</div>
+	<div class="settings">
+		<div class="settings-box">
+			<div class="settings-text">Length <span class="to-be-hidden">of password</span></div>
+			<div class="settings-option" id="length-box">
+				<input type="range" min="8" max="50" value="20" id="length">
+				<span id="length-val">20</span>
+			</div>
+		</div>
+		<div class="settings-box">
+			<div class="settings-text">Include Upper Case letters</div>
+			<div class="settings-option">
+				<label class="toggle" for="upper">
+			    <input class="toggle__input" name="" type="checkbox" id="upper">
+			    <div class="toggle__fill"></div>
+				</label>
+			</div>
+		</div>
+		<div class="settings-box">
+			<div class="settings-text">Include lower case letters</div>
+			<div class="settings-option">
+				<label class="toggle" for="lower">
+			    <input class="toggle__input" name="" type="checkbox" id="lower">
+			    <div class="toggle__fill"></div>
+				</label>
+			</div>
+		</div>
+		<div class="settings-box">
+			<div class="settings-text">Include numbers</div>
+			<div class="settings-option">
+				<label class="toggle" for="number">
+			    <input class="toggle__input" name="" type="checkbox" id="number">
+			    <div class="toggle__fill"></div>
+				</label>
+			</div>
+		</div>
+		<div class="settings-box">
+			<div class="settings-text">Include special characters</div>
+			<div class="settings-option">
+				<label class="toggle" for="special">
+			    <input class="toggle__input" name="" type="checkbox" id="special">
+			    <div class="toggle__fill"></div>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="lower-settings">
+		<div>
+			<input type="text" placeholder="Create new password" class="password-box" id="passwordField">
+		</div>
+		<div>
+			<button class="btn" id="generate">Generate</button>
+			<button class="btn" id="copy">Copy</button>
+		</div>
+	</div>
+	<div class="footer">
+		View this page in <span>
+			<button class="text-gradient" id="darkMode">
+				dark mode
+			</button>
+		</span>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
